@@ -1,0 +1,9 @@
+<h1>ReneApp</h1>
+<a [routerLink]="['/currency']">Cotações</a> |
+<a [routerLink]="['/wallet']"> Carteira</a> |
+<span *ngIf="wallet.diff>0" style="color: green">↑</span>
+<span *ngIf="wallet.diff<0" style="color: red">↓</span>
+<hr />  
+<router-outlet></router-outlet>
+<hr />
+Rene Pádua | RA: 0050xxxxxxx23 | <a href="https://github.com/RenePadua">GitHub</a>
